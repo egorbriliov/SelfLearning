@@ -8,7 +8,7 @@ Polymorphism = Greek word that means to "have many forms or faces"
                 2. "Duck typing" = Object must have necessary attributes/methods
 """
 
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 
 class Shape:
 
@@ -39,9 +39,12 @@ class Triangle(Shape):
     def area(self):
         return self.base * self.height * 0.5
 
+class Pizza(Circle):
+    def __init__(self, topping, radius):
+        super().__init__(radius)
+        self.topping = topping
 
-
-shapes = [Circle(4), Square(5), Triangle(6, 7 )]
+shapes = [Circle(4), Square(5), Triangle(6, 7 ), Pizza("pepperoni", 15)]
 
 for shape in shapes:
     print(f"{shape.area()}cm")
