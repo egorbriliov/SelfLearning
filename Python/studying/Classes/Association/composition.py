@@ -1,9 +1,13 @@
 """
 Aggregation = A relationship where one object contains reference to other INDEPENDENT objects
-              "has-a" relationship
+              "has-a" relationship.
+              Includes a reference to the object, not the object itself. When deleting a class object, the objects
+              used are not deleted, only the reference to them.
 
 Composition = The composed object directly owns components, which exists independently
               "owns-a" relationship.
+              Includes an object, not a reference to an object. When an object of a class is deleted, the objects it
+              uses are also deleted.
 """
 
 class Engine:
