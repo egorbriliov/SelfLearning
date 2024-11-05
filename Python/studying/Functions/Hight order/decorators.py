@@ -11,12 +11,12 @@ def repeat(times: int):
 def greet(name: str) -> str:
     """Creating greeting stroke with name
     
-    Parametrs:
+    Parameters:
     -------
         name: str
-        Name that you would greeted
+        Name that you would greet
     
-    Rerurn:
+    Return:
     -------
         str:
         greeting stroke with name

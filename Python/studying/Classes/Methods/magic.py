@@ -48,7 +48,10 @@ book3 = Book("The Lion, the Witch and the Wardrobe", "C.S. Lewis", 172)
 
 book5 = Book("The Lion, the Witch and the Wardrobe", "C.S. Lewis", 172)
 
-# print(book1)
+
+
+
+print(book1)
 # print(book3 == book5)
 # print(book1 < book3)
 # print(book1 > book3)

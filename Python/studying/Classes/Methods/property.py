@@ -4,6 +4,7 @@
             Gives you getter, setter, and deleter method
 """
 
+
 class Rectangle:
     def __init__(self, width, height):
         self._width = width
@@ -41,11 +42,15 @@ class Rectangle:
         del self._height
         print("Height has been deleted")
 
-rectangle = Rectangle(3, 4)
+rectangle: Rectangle = Rectangle(3, 4)
+
 
 rectangle.width = 5
 rectangle.height = 6
 rectangle.height = -1
+
+del rectangle.width
+
 
 print(rectangle.width)
 print(rectangle.height)
