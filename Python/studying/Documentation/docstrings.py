@@ -34,7 +34,7 @@ class Example:
             first: intp
             Term.
             
-            second: int        
+            second:  int
             Term.
             
         Returns:

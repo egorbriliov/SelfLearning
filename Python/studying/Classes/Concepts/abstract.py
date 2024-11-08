@@ -1,5 +1,10 @@
+"""
+Gives a chance to create only necessary interface for work with him.
+"""
+
 from abc import ABC, abstractmethod
 
+# Created interface
 class Vehicle(ABC):
 
     @abstractmethod
@@ -10,7 +15,9 @@ class Vehicle(ABC):
     def stop(self) -> None:
         return None
 
-class Car(Vehicle):
+
+# Creating interface based on created interface
+class Car(Vehicle): # Will throw an error as the required methods that were specified in the created interface will be required
     pass
 
 class Motorcycle(Vehicle):
