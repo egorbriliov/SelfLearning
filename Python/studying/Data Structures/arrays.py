@@ -1,13 +1,13 @@
 from array import array
 
-# Создание массива
+# Creating array
 my_array: array = array('i', [1, 2, 3, 4])
 
-# Добавление элемента
+# Adding element
 my_array.append(5)
 
-# Удаление элемента
+# Deleting element
 my_array.remove(2)
 
-# Доступ по индексу
-print(my_array[0])  # Вывод: 1
+# Getting element by index
+print(my_array[0])  # Output: 1
