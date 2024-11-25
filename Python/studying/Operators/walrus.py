@@ -23,24 +23,27 @@ In this value, the value entered by the user is assigned to the variable value a
 Example 2: Using in a loop
 """
 
-# Без моржового оператора
+# Without walrus operator
 data = []
 while True:
-    value = input("Введите число (или 'exit' для выхода): ")
+    value = input("Enter a number (or 'exit to exit): ")
     if value == 'exit':
         break
     data.append(int(value))
 
-# С моржовым оператором
+# With walrus operator
+# Here := allows you to test a condition and assign a value at the same time.
 data = []
-while (value := input("Введите число (или 'exit' для выхода): ")) != 'exit':
+while (value := input("Enter a number (or 'exit' to exit)")) != 'exit':
     data.append(int(value))
 
-# Здесь := позволяет одновременно проверять условие и присваивать значение.
 
-# Преимущества
-# Сокращение кода: Уменьшается количество строк кода.
-# Читаемость: Упрощает понимание, когда присваивание происходит в условиях.
-# Ограничения
-# Оператор не может использоваться в выражениях, где не допускается присваивание (например, в списковых включениях, если нет явного контекста).
-# Использование моржового оператора может сделать ваш код более лаконичным и удобным, но стоит использовать его с осторожностью, чтобы не ухудшить читаемость.
+# Benefits
+# Code reduction: Reduces the number of lines of code.
+# Readability: Makes it easier to understand when a match occurs in conditions.
+
+# Limitations
+# The operator cannot be used in expressions where it is not specified
+# (for example, in include lists, unless there is an explicit context).
+# Using the walrus tool can make your code more concise and maintainable,
+# but it should be used with caution so as not to degrade readability.
