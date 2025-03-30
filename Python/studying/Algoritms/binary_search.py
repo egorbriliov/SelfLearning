@@ -16,9 +16,9 @@ def binary_search(numbers: list, number: int):
         if guess == number:
             return iteration_count
         if guess > number:
-            high: int = mid - 1
+            high = mid - 1
         else:
-            low: int = mid + 1
+            low = mid + 1
     return None
 
 
